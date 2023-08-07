@@ -154,11 +154,49 @@ select {
   border: 1px solid #007f61;
   background: #f4fbf9;
 }
+.offer_txt {
+  color: #0000004d;
+  font: 400 10px "Inter";
+  text-decoration: line-through;
+}
+/* customize styling for radio input */
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #dadada;
+  border-radius: 50%;
+}
+input[type="radio"]:checked + label::before {
+  background-color: #007f61;
+  border: 2px solid #fff;
+  outline: 1px solid #007f61;
+  width: 12px;
+  height: 12px;
+}
+
 /* Media query starts */
 @media (max-width: 1440px) {
   .content_wrapper {
     max-width: 1000px;
     margin: 100px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .content_wrapper {
+    padding: 0 15px;
   }
 }
 /* Media query ends */
