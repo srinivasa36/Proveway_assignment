@@ -160,6 +160,7 @@ select {
   color: #0000004d;
   font: 400 10px "Inter";
   text-decoration: line-through;
+  text-decoration-color: #9f9f9f;
 }
 /* customize styling for radio input */
 input[type="radio"] {
