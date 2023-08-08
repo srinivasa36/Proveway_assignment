@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -119,7 +121,7 @@ select {
 }
 .item_total h3,
 .item_total h2 {
-  color: #007f61;
+  color: #007f6199;
   font: 500 14px "Inter";
 }
 .item_total h2 {
@@ -190,14 +192,14 @@ input[type="radio"]:checked + label::before {
 }
 
 /* Media query starts */
-@media (max-width: 1440px) {
+@media (max-width: 1440px), (min-width: 1440px) {
   .content_wrapper {
-    max-width: 1000px;
+    max-width: 990px;
     margin: 100px auto;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (min-width: 768px) {
   .content_wrapper {
     padding: 0 15px;
   }
