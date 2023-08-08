@@ -199,7 +199,14 @@ input[type="radio"]:checked + label::before {
   }
 }
 
-@media (max-width: 768px), (min-width: 768px) {
+@media (max-width: 768px) {
+  .content_wrapper {
+    padding: 0 15px;
+    max-width: 340px;
+  }
+}
+
+@media (min-width: 768px) {
   .content_wrapper {
     padding: 0 15px;
   }
